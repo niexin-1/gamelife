@@ -1,0 +1,603 @@
+<!DOCTYPE html><html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="wap-font-scale" content="no">
+  <meta name="keywords" content="租号,游戏租号,VIP会员出租,GameLife租号平台">
+  <meta name="description" content="GameLife租号平台是大家首选的租号平台，提供手游账号出租、VIP会出租等服务，安全可靠，便宜到家。">
+  <title>支付</title>
+  <link rel="stylesheet" href="../pcassets/css/style-bdd73ed244.css">
+    <script src="../pcassets/js/_common/jquery-22d54e62e6.js"></script>
+    <script src="../pcassets/js/_common/base-4bd599917e.js"></script>
+</head>
+<body  class="pay_index" id="body">
+
+ <div class="common_header">
+  <header class="hd-box hover_txt">
+    <div class="main vertical">
+      <div>
+        <a href="index.html">hi，欢迎来到GameLife租号平台</a>
+          <span class="not_login">|</span>
+          <a href="pc/user/login.htm" class="not_login">安全登录</a>
+          <a href="pc/user/register.htm" class="not_login">免费注册</a>
+      </div>
+      <div class="vertical">
+
+        <a href="index.html" class="head_link">首页</a>
+        <div class="head_link buyer_link">
+          <a href="pc/user/login-currentUrl">玩家中心</a>
+          <div class="sub_link"><a href="">我的租号订单</a></div>
+        </div>
+        <div class="head_link host_link">
+          <a href="#">号主中心</a>
+          <div class="sub_link">
+            <a href="#">我要出租</a>
+            <a href="#">我出租的商品</a>
+            <a href="#">我出租的订单</a>
+          </div>
+        </div>
+        <div class="head_link">
+            <a href="index.html">商户助手</a>
+        </div>
+        <a href="index.html" class="head_link">帮助中心</a>
+      </div>
+    </div>
+  </header>
+  <div class="nav_box">
+    <div class="main">
+      <div class="top vertical">
+        <div class="vertical">
+          <a href="/">
+            <img src="../pcassets/images/index/logo-dc85e6e113.png" alt="租号logo" width="252" height="84">
+          </a>
+          <h1 class="logo_name">更懂你的安全租号平台</h1>
+        </div>
+        <div class="search_box vertical" id="search_game">
+          <form action="/product/list" @submit="on_submit" class="search_form">
+            <input type="search" class="search" name="keyword" value="" placeholder="请输入关键词为您搜索">
+            <button class="go_search btn">搜索</button>
+            <input type="hidden" name="game_id" value="">
+            <input type="hidden" name="channel_id" value="">
+            <input type="hidden" name="game_partition_id" value="">
+          </form>
+        </div>
+      </div>
+      <nav class="nav_bar vertical">
+        
+        <a href="/" class="nav_link on">首页</a>
+        <a href="/pc/zsyh" class="nav_link">租送优惠</a>
+        <a href="/pc/yzzh" class="nav_link">优质账号</a>
+        <a href="/pc/sjrz" class="nav_link">商家入驻</a>
+        <a href="/pc/order/loginkit" class="nav_link hot">下载租号上号器</a>
+        <a href="https://www.8868.cn/announcement/detail-1927.html" target="_blank" class="nav_link">帮助中心</a>
+        <!--<a href="/pc/zhapp" class="nav_link">下载APP</a>-->
+      </nav>
+    </div>
+    <hr class="yellow">
+  </div>
+</div>
+   <ul class="bread_nav vertical hover_txt">
+    <li><a href="/">租号首页</a></li>
+      <li><a href="javascript:location.href=document.refferer">订单确认</a></li>
+      <li><a>支付</a></li>
+  </ul>
+
+
+
+<header class="hd-box">
+  <div class="hd">
+    <a href="javascript:history.back()" class="back icon vertical"></a>
+    <h1>支付</h1>
+    <div class="hd-right">
+      <a href="/" class="index icon" style="right:0;" >租号</a>
+
+
+      <a href="https://im-aliyun.8868.cn/zuhao/chat?clientType=wap&consultType=0&uid=null&userId="  class="custom-service icon" target="_blank" rel="nofollow">客服</a>
+
+      <a href="javascript:void(0)" class="hd-action"></a>
+    </div>
+  </div>
+</header>
+<!--调试-->
+<!--<script src="//cdn.bootcss.com/eruda/1.4.2/eruda.min.js"></script>
+<script>eruda.init();</script>-->
+<!--调试-->
+<div class="main">
+  <form action="/pc/pay/pay" method="post" class="tb_count" id="pay_form">
+    <input type="hidden" name="pay_type" value="">
+    <input type="hidden" name="pay_id" value="RELET-191123-111049996-5E6559">
+    <input type="hidden" name="platform" value="web">
+    <h1 class="tb-hd line2">外加炫金黑龙  500天烟雾头</h1>
+    <p class="tb_price mt30">
+      <span class="pr15">订单金额：</span><strong>16.0</strong> 元
+    </p>
+    <div class="over_pay mt30">
+      <span class="fl c666 pr15">余额支付：</span>
+      <div class="fl">
+        <label class="fl c666">
+          <input type="checkbox" value="balancePay" class="balance" disabled >
+          <div class="sy_box">
+            使用余额
+            <i class="sy_gx"></i>
+          </div>
+        </label>
+        <div class="use_money fl c999">可用余额<span>￥0.0</span></div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+
+    <div class="online_pay">
+      <span class="fl c666 pr15">在线支付：</span>
+      <div class="fl pay_styles">
+        <label class="pay_zfb vertical">
+          <div class="vertical">
+            <input class="pay_way" type="radio" name="pay_way" value="zhiFuBaoPay" checked>
+            <span class="demo--radioInput"></span>
+            <img src="/icons/pc/pay/zhiFuBaoPay.png" class="zfb_pic"/>支付宝
+          </div>
+          <!--<div class="pay_money" style="display: block;">
+            需支付:<span class="red">16.0</span>
+          </div>-->
+        </label>
+        <label class="pay_zfb vertical">
+          <div class="vertical">
+            <input class="pay_way" type="radio" name="pay_way" value="weiXinPay">
+            <span class="demo--radioInput"></span>
+            <img src="/icons/pc/pay/weiXinPay.png" class="zfb_pic"/>微信
+          </div>
+          <!--<div class="pay_money" style="display: block;">
+            需支付:<span class="red">16.0</span>
+          </div>-->
+        </label>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="border-line"></div>
+    <div class="need-pay mt30">
+      <div class="fl c999" id="rest_box">
+        还需支付:<strong id="rest_pay">16.0</strong> 元
+      </div>
+      <div class="fr">
+        <button class="btn topay_btn">去付款</button>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </form>
+
+
+  <div id="find_pwd-simple-dialog" class="dialog-mask">
+    <div class="dialog">
+      
+      <div class="title">找回密码</div>
+      <div class="content">
+  <input id="find_by_mobile" type="radio" name="find_pwd" hidden checked class="find_pwd_radio">
+  <input id="find_by_origin" type="radio" name="find_pwd" hidden class="find_pwd_radio">
+  <label for="find_by_mobile" class="find_pwd_tab"><span>手机验证</span></label><label for="find_by_origin" class="find_pwd_tab"><span >原密码验证</span ></label>
+  <div id="find_by_mobile_div" hidden class="find_pwd_display">
+    <div class="vertical">手机号码：<input id="pwd_phone" class="qq_input" type="tel" maxlength="11" readonly placeholder="请先绑定手机号码" value="13472021509"></div>
+      <div class="vertical">
+        <div style="width: 5em;text-align: right">验证码：</div>
+        <div class="code_input">
+          <input class="qq_input" type="tel" maxlength="10" placeholder="手机验证码" id="pwd_code">
+        </div>
+        <button class="code_btn qq_input" type="button" id="pwd_code_btn">点击获取</button>
+      </div>
+      <div class="vertical">支付密码：<input id="pwd" class="qq_input" type="password" maxlength="16" placeholder="6-16位字符,区分大小写"></div>
+  </div>
+  <div id="find_by_origin_div" hidden class="find_pwd_display">
+    <div class="vertical">旧支付密码：<input id="origin_pwd" class="qq_input" type="password" maxlength="16" placeholder="请输入旧支付密码"></div>
+    <div class="vertical">新支付密码：<input id="new_pwd" class="qq_input" type="password" maxlength="16" placeholder="6-16位字符,区分大小写"></div>
+    <div class="vertical">请确认密码：<input id="re_pwd" class="qq_input" type="password" maxlength="16" placeholder="请重复输入支付密码"></div>
+  </div>
+  </div>
+      <div class="btns">
+        <button id="find_pwd-simple-dialog-close" type="button">取消</button>
+        <button id="find_pwd-simple-dialog-submit" type="button">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div id="pay-simple-dialog" class="dialog-mask">
+    <div class="dialog">
+      
+      <div class="title">温馨提示</div>
+      <div class="content">正在支付...</div>
+      <div class="btns">
+        <button id="pay-simple-dialog-close" type="button">取消支付</button>
+        <button id="pay-simple-dialog-submit" type="button">我已支付</button>
+      </div>
+    </div>
+  </div>
+    <script>
+      base.simpleForm('pay','',null,null,function(){
+    location.href = pay_success_link
+  })
+    </script>
+
+<script>
+  if(window.JugameAppJsInterface && window.JugameAppJsInterface.jsiCallWeixinPay) {
+    var pay_param;
+    var timer = +new Date();
+    var pay_timer;
+    var check_result;
+    var pay_call_back;
+    var pay_success_link;
+    check_result = function(){
+      $.ajax({
+        url: "/pc/pay/payEnd?pay_id=RELET-191123-111049996-5E6559",
+        success: function (data) {
+          if(data.code === 0 || (+new Date() - timer) > 1000*60*5){
+            clearTimeout(pay_timer);
+            if(data.code === 0){
+                $('#pay-simple-dialog .content').html('支付成功，正在跳转');
+            }
+              location.href = pay_success_link;
+          }else{
+            pay_timer = setTimeout(check_result,4000)
+          }
+        }
+      })
+    }
+
+    pay_call_back = function(e){
+      var hidden = e.target.webkitHidden || e.target.hidden;
+      if(!hidden){
+        check_result();
+      }
+    }
+
+    document.addEventListener("visibilitychange", pay_call_back, false);
+    $('#pay-simple-dialog-close').on('click', function () {
+      //取消微信支付
+      clearTimeout(pay_timer)
+      $('.topay_btn').text('重新支付').prop('disabled',false)
+    })
+  }
+</script>
+
+ <footer class="ft">
+  <div class="main vertical">
+    <div class="left hover_txt">
+      <!--<div class="friend_link">
+        友情链接：<a href="http://z.8868.cn" target="_blank">租号平台</a><a href="http://www.100bt.com/"
+                                                                   target="_blank">百田网</a><a
+              href="http://www.18touch.com/" target="_blank">超好玩</a><a href="http://www.jokeji.cn/"
+                                                                       target="_blank">笑话集</a><a
+              href="http://www.gamedog.cn" target="_blank">游戏狗</a><a href="http://www.8868.cn/ios_charge/"
+                                                                     target="_blank">苹果代充</a><a
+              href="http://www.gk99.com/" target="_blank">游戏港口</a><a href="http://www.douxie.com/" target="_blank">单机游戏大全</a><a
+              href="http://www.3gmfw.cn/ " target="_blank">游戏攻略</a>
+      </div>
+      <div>
+        客服热线：0757-63523999
+      </div>-->
+      <div>
+        <a href="https://www.8868.cn/announcement/detail-1927.html" target="_blank">帮助中心&nbsp;</a>　|　　<a href="https://www.8868.cn/announcement/detail-1927.html">常见问题</a>　　|　　<a href="https://www.8868.cn/announcement/detail-1927.html">新手帮助</a>　　|　　<a href="https://www.8868.cn/user/userfeedback.html">反馈及投诉</a>
+      </div>
+      <div>
+        坤坤团队信息科技有限公司版权所有　　　粤ICP备********号　　　粤网文[2019]****-***号
+      </div>
+    </div>
+    <div class="qr_code vertical">
+      <div>
+        <img src="../pcassets/images/_footer/app_qrcode-15fb907783.png" alt="扫我下载移动端">
+        扫我下载移动端
+      </div>
+      <div>
+        <img src="../pcassets/images/_footer/public-1e42242064.jpg" alt="关注公众号">
+        关注公众号
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="../pcassets/js/_common/vue-f801a16d2c.js"></script>
+
+  <script>
+    $(function () {
+      var pay_form = $('#pay_form');
+      var balance = $('.balance');
+
+      //
+      window.bind_phone = $('#bind_phone-simple-dialog');
+      window.bind_success = function () {};
+      window.is_bind_phone = 1;
+
+
+      base.get_mobile_code({
+        code_btn: $('#pwd_code_btn'),
+        mobile: $('#pwd_phone')
+      });
+
+      //
+      $('.find_pwd_link').on('click',function () {
+        window.is_bind_phone ? $('#find_pwd-simple-dialog').show() : window.bind_phone.show();
+
+        window.bind_success = function () {
+          $('#find_pwd-simple-dialog').show();
+        }
+      });
+
+      $('#find_pwd-simple-dialog-submit').on('click',function () {
+          //
+        var data = {
+          "reset_type" : 1,
+          "uid"  : '0'
+        };
+        var check_pwd = /^\S{6,16}$/;
+        if($('#find_by_mobile').prop('checked')){
+          var pwd_code = $('#pwd_code');
+          var pwd = $('#pwd');
+          if(!pwd_code.val()){
+            base.toast('请输入验证码');
+            pwd_code.focus();
+            return false;
+          }else if(!check_pwd.test(pwd.val())){
+            base.toast('请输入' + pwd.attr('placeholder'));
+            pwd.focus();
+            return false;
+          }else{
+            data.mobile = $('#pwd_phone').val();
+            data.vcode = pwd_code.val();
+            data.new_pay_pwd = pwd.val();
+          }
+        }else{
+          var origin_pwd = $('#origin_pwd');
+          var new_pwd = $('#new_pwd');
+          if(!check_pwd.test(origin_pwd.val()) || !check_pwd.test(new_pwd.val())){
+            base.toast(new_pwd.attr('placeholder'));
+            return false;
+          }
+          if(new_pwd.val() !== $('#re_pwd').val()){
+            base.toast('两次密码输入不一致');
+            return false;
+          }
+          data.reset_type = 2;
+          data.old_pay_pwd = origin_pwd.val();
+          data.new_pay_pwd = new_pwd.val();
+        }
+        ///
+        $.get('/pc/pay/resetPayPwd',data,function (data) {//data={code:200,msg:'xxx'}
+          base.toast(data.msg);
+          if(data.code === 200){
+            $('#find_pwd-simple-dialog').hide();
+          }
+        })
+
+      });
+
+      $('#find_pwd-simple-dialog-close').on('click',function () {
+        $(this).parents('.dialog-mask').hide()
+      });
+
+      balance.on('change',function () {
+        if(this.checked){
+          $('.psw_box').show();
+          pay_form[0].noValidate = false
+        }else{
+          $('.psw_box').hide();
+          pay_form[0].noValidate = true
+        }
+      })
+
+      pay_form.on('submit',function (e) {
+        $('.topay_btn').text('正在提交..').prop('disabled',true)
+        var pay_way_checked = $('.pay_way:checked');
+
+        //
+        // if(pay_way_checked.length){
+          //
+          if(!0 && !is_bind_phone){
+            bind_phone.show();
+            bind_success = function(){
+              pay_form.submit();
+            }
+            $('.topay_btn').text('去付款').prop('disabled',false)
+            return false;
+          }
+        // }
+
+        if(balance[0].checked){
+          if(pay_way_checked.length){
+            pay_way_checked.val(balance.val() + ',' + pay_way_checked.val());
+          }else{
+            pay_way_checked.val(balance.val())
+          }
+        }
+
+
+
+        if(window.JugameAppJsInterface && window.JugameAppJsInterface.jsiCallWeixinPay && pay_way_checked.val().indexOf("weiXinPay") > -1){
+          e.preventDefault();
+          $('#pay-simple-dialog').show();
+          check_result();
+          $.getJSON('/pc/pay/pay?pay_id=RELET-191123-111049996-5E6559&pay_way='+pay_way_checked.val()+'&pay_passwd='+$('#psw').val(),function (data) {
+            pay_param = data;
+
+              pay_success_link = pay_param.payType === 'bond' ? '/rent/save' : ('/'+data.payType+'/detail?'+data.payType+'_id='+(data.payType == 'order' ? data.orderId : data.productId));
+
+            JugameAppJsInterface.jsiCallWeixinPay(pay_param.appId, pay_param.partnerId, pay_param.prepayId, pay_param.package, pay_param.noncestr, pay_param.timestamp, pay_param.sign)
+          })
+        }
+
+      });
+
+      if(balance[0].type === 'radio'){
+        $('.pay_way').on('change',function () {
+          $('.psw_box').hide();
+          pay_form[0].noValidate = true;
+          $('#rest_box').show();
+        })
+      }
+
+    })
+  </script>
+
+<script>
+  (function () {
+    var search_game = new Vue({
+      el: '#search_game',
+      data: {
+        game_name: "全部游戏",
+        channel_name: "全部渠道",
+        partition_name: "全部区服",
+        m_games: [],
+        pc_games: [],
+        v_games: [],
+        channels: [],
+        categories: [],
+        partitions: [],
+        game_type: 1,
+        game_letters: base.letters(),
+        game_keyword: '',
+        game_id: '',
+        channel_id: ' ',
+        category_id: '',
+        partition_id: ''
+      },
+      methods:{
+        get_game: function(type,data_name,letter,keywords){
+          var data_name = arguments[1];
+          if(keywords){
+            if(this.game_type === 1){
+              data_name = 'm'
+            }else if(this.game_type === 2){
+              data_name = 'v'
+            }else if(this.game_type === 5){
+              data_name = 'pc'
+            }
+          }
+
+          base.get_game({
+            letter: letter,
+            type: type || this.game_type,
+            keywords: keywords,
+            done: function (data) {
+              this[data_name+'_games'] = data.games;
+            }.bind(this)
+          })
+        },
+        close_box: function(attr){
+          var keys = Object.keys(attr);
+          var attr_name = keys[0].substring(0,keys[0].indexOf('_'));
+          this[attr_name+'_id']=attr[attr_name+'_id'];
+          this[attr_name+'_name']=attr[attr_name+'_name'];
+        },
+        on_submit: function (e) {
+          if(this.game_id){
+            var $this = e.target;
+            $this.game_id.value = this.game_id;
+            $this.channel_id.value = this.channel_id.trim();
+            $this.game_partition_id.value = this.partition_id;
+          }else{
+            e.preventDefault();
+            base.toast('请先选择游戏');
+            $('.input_trigger:eq(0)').click();
+          }
+        }
+      },
+      watch:{
+        game_id: function (val) {
+          base.get_channel({
+            game_id: val,
+            done: function (data) {
+              this.channels = [{channel_name:'全部渠道',channel_id:''}].concat(data.channels);
+              var has_page_channel_id;
+              if(!has_page_channel_id){
+                this.channel_name = this.channels[0].channel_name;
+                this.channel_id = this.channels[0].channel_id;
+              }else{
+                this.channel_name = '';
+                this.channel_id = '';
+                has_page_channel_id = false;
+              }
+            }.bind(this),
+            fail: function(data){
+              this.channels = [{channel_name:'全部渠道',channel_id:''}]
+              this.channel_name = this.channels[0].channel_name;
+              this.channel_id = this.channels[0].channel_id;
+
+              this.categories = [{category_name:'全部区服组',category_id:''}];
+              this.category_id = this.categories[0].category_id;
+
+              this.partitions = [{partition_name:'全部区服',partition_id:''}]
+              this.partition_id = this.partitions[0].partition_id;
+              this.partition_name = this.partitions[0].partition_name;
+            }.bind(this)
+          })
+        },
+        channel_id: function (val) {
+          base.get_partition_categories({
+            game_id: this.game_id,
+            channel_id: val,
+            done: function (data) {
+              this.categories = data.categories;
+              this.category_id = this.categories[0].category_id;
+            }.bind(this),
+            fail: function (data) {
+              this.categories = [];
+              this.category_id = '';
+            }.bind(this)
+          })
+        },
+        category_id: function (val) {
+          base.get_partition({
+            game_id: this.game_id,
+            category_id: val,
+            done: function (data) {
+              this.partitions = [{partition_name:'全部区服',partition_id:''}].concat(data.partitions);
+              var has_page_partition_id;
+              if(!has_page_partition_id){
+                this.partition_id = this.partitions[0].partition_id;
+                this.partition_name = this.partitions[0].partition_name;
+              }else{
+                this.partition_name = '';
+                this.partition_id = '';
+                has_page_partition_id = false;
+              }
+            }.bind(this),
+            fail: function (data) {
+              this.partitions = [{partition_name:'全部区服',partition_id:''}]
+              this.partition_id = this.partitions[0].partition_id;
+              this.partition_name = this.partitions[0].partition_name;
+            }.bind(this)
+          })
+        }
+      }
+    });
+    search_game.game_id = '';
+  }());
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded',function () {
+    //body内点击关闭弹窗
+    var game_selector = $('.game_selector');
+    $('body').on('click', function () {
+      game_selector.hide();
+    }).on('click','.input_trigger',function (e) {
+      e.stopPropagation();
+      game_selector.hide();
+      $(this).find('.game_selector').show();
+    });
+    game_selector.on('click',function (e) {
+      e.stopPropagation()
+    }).on('click','.option_link',function () {
+      game_selector.hide()
+    });
+  });
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4144d60a0a98732e2e8ed5d9ac322bfc";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

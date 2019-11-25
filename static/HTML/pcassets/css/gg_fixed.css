@@ -1,0 +1,333 @@
+body, ul, ol, dl, dd, p {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #666666; }
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto; }
+  .container:before {
+    content: '';
+    display: block;
+    clear: both; }
+  .container:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+body, ul, ol, dl, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+body {
+  background-color: #f8f8f8;
+  color: #666666;
+  font-size: 12px;
+  font-family: 'microsoft Yahei'; }
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto; }
+  .container:before {
+    content: '';
+    display: block;
+    clear: both; }
+  .container:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.lf {
+  float: left; }
+
+.rt {
+  float: right; }
+
+.top {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #f8f8f8;
+  line-height: 36px; }
+  .top .container {
+    background: #f8f8f8; }
+    .top .container .top-lf > span {
+      padding: 0 15px 0 5px;
+      border-right: 1px solid #ddd;
+      margin-right: 10px; }
+    .top .container .top-lf a {
+      padding: 2px 10px 2px 2px; }
+    .top .container .top-lf b span {
+      color: #EE6800; }
+    .top .container .top-rt {
+      margin-right: 20px; }
+      .top .container .top-rt li {
+        float: left;
+        position: relative;
+        padding: 0 8px; }
+        .top .container .top-rt li > a {
+          padding: 3px 30px 3px 0px;
+          border-right: 1px solid #ddd; }
+          .top .container .top-rt li > a:hover i {
+            background: url("../../themeRed/img/icons1.png") no-repeat 0 -240px; }
+        .top .container .top-rt li i {
+          position: absolute;
+          width: 14px;
+          height: 8px;
+          top: 16px;
+          right: 20px;
+          background: url("../../themeRed/img/icons1.png") no-repeat 0 -232px; }
+        .top .container .top-rt li > div {
+          position: absolute;
+          top: 34px;
+          left: -6px;
+          width: 92px;
+          border: 1px dotted #f8f8f8;
+          background: #fefefe;
+          text-align: center;
+          display: none; }
+          .top .container .top-rt li > div a {
+            display: block;
+            padding: 2px 4px;
+            line-height: 24px; }
+            .top .container .top-rt li > div a:hover {
+              color: #ee6800;
+              background: #ddd; }
+        .top .container .top-rt li.recharge a {
+          color: #ee6800; }
+        .top .container .top-rt li.recharge a:first-child {
+          border-right: 0;
+          color: #24AC4B;
+          padding-right: 18px; }
+        .top .container .top-rt li.ser a {
+          border-right: 0; }
+        .top .container .top-rt li:hover > div {
+          display: block; }
+    .top .container a:hover {
+      color: #ae1b13; }
+
+.header {
+  margin-top: 36px;
+  background: #fff; }
+  .header .container {
+    height: 100px;
+    background: #fff; }
+    .header .container img {
+      margin-top: 18px; }
+    .header .container .search {
+      line-height: 100px;
+      margin-right: 30px;
+      position: relative; }
+      .header .container .search a {
+        padding: 10px 14px;
+        background: #c51e16;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 2px;
+        position: relative;
+        top: 2px;
+        left: -4px; }
+        .header .container .search a:hover {
+          background: #971711; }
+      .header .container .search input {
+        width: 400px;
+        height: 35px;
+        position: relative;
+        padding-left: 8px; }
+
+.nav {
+  background: #c51e16;
+  height: 48px; }
+  .nav .container {
+    background: #c51e16;
+    height: 48px; }
+  .nav ul {
+    overflow: hidden;
+    padding-left: 220px;
+    height: 48px;
+    width: 800px;
+    position: relative;
+    top: -1px; }
+    .nav ul li {
+      float: left;
+      padding: 0 30px;
+      height: 48px; }
+      .nav ul li:hover {
+        background: #e73027; }
+      .nav ul li a {
+        color: #fff;
+        height: 48px;
+        line-height: 47px;
+        float: left;
+        position: relative;
+        font-size: 16px;
+        font-weight: bold; }
+
+.service {
+  background: #f8f8f8;
+  padding: 15px 0; }
+  .service .logo {
+    line-height: 160px;
+    padding-left: 20px;
+    margin-right: 40px; }
+    .service .logo img {
+      vertical-align: middle; }
+  .service ul {
+    margin: 10px 0 0 30px;
+    width: 120px; }
+    .service ul li {
+      line-height: 24px;
+      text-align: center; }
+      .service ul li a {
+        color: #999; }
+        .service ul li a:hover {
+          color: #666; }
+      .service ul li:first-child {
+        line-height: 36px;
+        font-weight: bold; }
+        .service ul li:first-child a {
+          color: #444; }
+  .service .tel {
+    margin: 20px 0 0 80px;
+    border-left: 1px dotted #ddd;
+    text-align: center;
+    width: 180px; }
+    .service .tel p {
+      margin: 0;
+      line-height: 30px; }
+      .service .tel p.tel-1 {
+        color: #333; }
+      .service .tel p.tel-2 {
+        color: #c51e16; }
+      .service .tel p.tel-h {
+        color: #999;
+        margin-bottom: 5px; }
+    .service .tel a {
+      padding: 8px 10px 8px 30px;
+      color: #666;
+      border: 1px solid #ddd;
+      background: white url("../../themeRed/img/msg.png") no-repeat 7px 9px; }
+      .service .tel a:hover {
+        color: #c51e16; }
+
+.footer {
+  height: 200px;
+  background: #363636; }
+  .footer p {
+    text-align: center; }
+  .footer .ft-title {
+    margin: 0;
+    line-height: 80px;
+    border-bottom: 1px dotted #999; }
+    .footer .ft-title span {
+      display: inline-block;
+      width: 390px;
+      color: #ddd;
+      text-align: center;
+      font-size: 20px; }
+  .footer .ft-link {
+    text-align: center;
+    line-height: 30px; }
+    .footer .ft-link a {
+      color: #aaa;
+      padding: 0 15px;
+      border-left: 1px solid #aaa; }
+      .footer .ft-link a:hover {
+        color: #fff; }
+      .footer .ft-link a:first-child {
+        border-left: 0; }
+
+.aside {
+  position: fixed;
+  width: 40px;
+  height: 100%;
+  background: #232323;
+  padding-top: 100px;
+  right: 0;
+  top: 0;
+  color: #fff; }
+  .aside ul li {
+    position: relative; }
+    .aside ul li > a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      color: #fff; }
+      .aside ul li > a i {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        left: 10px;
+        top: 10px;
+        background: url("../../themeRed/img/icons1.png") no-repeat 0 -162px; }
+      .aside ul li > a:hover {
+        background: #c51e16; }
+    .aside ul li > div {
+      position: absolute;
+      top: 0;
+      right: 40px;
+      height: 40px;
+      padding: 0 10px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      background: #444;
+      width: 80px;
+      display: none; }
+    .aside ul li:hover > div {
+      display: block; }
+    .aside ul li.aside-serv a {
+      height: 100px;
+      text-align: center;
+      padding-top: 30px; }
+      .aside ul li.aside-serv a i {
+        background: url("../../themeRed/img/icons1.png") no-repeat 0 -248px; }
+    .aside ul li.aside-tel > div {
+      width: 180px;
+      font-size: 14px;
+      padding: 0 10px; }
+    .aside ul li.aside-ma i {
+      background: url("../../themeRed/img/icons1.png") no-repeat 0 -180px; }
+    .aside ul li.aside-ma > div {
+      width: 120px;
+      height: 150px;
+      top: -40px;
+      padding: 5px; }
+      .aside ul li.aside-ma > div img {
+        width: 120px;
+        height: 120px; }
+      .aside ul li.aside-ma > div p {
+        text-align: center;
+        margin: 0;
+        line-height: 0; }
+    .aside ul li.aside-faq i {
+      background: url("../../themeRed/img/icons1.png") no-repeat 0 -198px; }
+    .aside ul li.aside-faq > div a {
+      display: inline-block;
+      width: 80px;
+      font-size: 14px;
+      color: #fff; }
+    .aside ul li.aside-club i {
+      background: url("../../themeRed/img/icons1.png") no-repeat 0 -214px; }
+    .aside ul li.aside-club > div a {
+      display: inline-block;
+      width: 80px;
+      font-size: 14px;
+      color: #fff; }
+  .aside > a {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 20px; }
+    .aside > a:hover {
+      color: #c51e16; }

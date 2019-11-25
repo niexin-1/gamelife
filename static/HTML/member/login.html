@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="wap-font-scale" content="no">
+  <meta name="keywords" content="租号,游戏租号,VIP会员出租,GameLife租号平台">
+  <meta name="description" content="GameLife租号平台是大家首选的租号平台，提供手游账号出租、VIP会出租等服务，安全可靠，便宜到家。">
+  <title>登录</title>
+  <link rel="stylesheet" href="../pcassets/css/style-bdd73ed244.css">
+  <link rel="stylesheet" type="text/css" href="../pcassets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../pcassets/css/main.css">
+    <script src="../pcassets/js/_common/jquery-22d54e62e6.js"></script>
+    <script src="../pcassets/js/_common/base-4bd599917e.js"></script>
+</head>
+<body  class="login" id="body">
+
+ <div class="common_header">
+  <div class="nav_box">
+    <div class="main">
+      <div class="top vertical">
+        <div class="vertical">
+          <a href="/">
+            <img src="../pcassets/images/index/logo-dc85e6e113.png" alt="租号logo" width="252" height="84">
+          </a>
+          <h1 class="logo_name">更懂你的安全租号平台</h1>
+        </div>
+      </div>
+    </div>
+    <hr class="yellow">
+  </div>
+</div>
+
+<div class="login_bg">
+  <!--<iframe src="https://www.8868.cn/staticHtml?name=login&currentUrl=http%3A%2F%2Fz.8868.cn&__v=pc&fr=rent" frameborder="0"></iframe>-->
+  <div class="login_form_bg">
+		<div class="login_form_wrap clearfix">
+			<div class="login_banner fl"></div>
+
+			<div class="login_form fr">
+				<div class="login_title clearfix">
+					<h1>用户登录</h1>
+					<a href="#">立即注册</a>
+				</div>
+				<div class="form_input">
+					<form method="post">
+                        {% csrf_token %}
+						<input type="text" name="username" class="name_input" value="" placeholder="请输入用户名">
+						<div class="user_error">输入错误</div>
+						<input type="password" name="pwd" class="pass_input" placeholder="请输入密码">
+						<div class="pwd_error">输入错误</div>
+						<div class="more_input clearfix">
+							<input type="checkbox" name="rember" >
+							<label>记住用户名</label>
+							<a href="#">忘记密码</a>
+						</div>
+						<input type="submit" name="" value="登录" class="input_submit">
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+ <footer class="ft">
+  <div class="main vertical">
+    <div class="left hover_txt">
+      <!--<div class="friend_link">
+        友情链接：<a href="http://z.8868.cn" target="_blank">租号平台</a><a href="http://www.100bt.com/"
+                                                                   target="_blank">百田网</a><a
+              href="http://www.18touch.com/" target="_blank">超好玩</a><a href="http://www.jokeji.cn/"
+                                                                       target="_blank">笑话集</a><a
+              href="http://www.gamedog.cn" target="_blank">游戏狗</a><a href="http://www.8868.cn/ios_charge/"
+                                                                     target="_blank">苹果代充</a><a
+              href="http://www.gk99.com/" target="_blank">游戏港口</a><a href="http://www.douxie.com/" target="_blank">单机游戏大全</a><a
+              href="http://www.3gmfw.cn/ " target="_blank">游戏攻略</a>
+      </div>
+      <div>
+        客服热线：0757-63523999
+      </div>-->
+      <div>
+        <a href="javascript:if(confirm('https://www.8868.cn/announcement/detail-1927.html  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.8868.cn/announcement/detail-1927.html'" tppabs="https://www.8868.cn/announcement/detail-1927.html" target="_blank">帮助中心&nbsp;</a>　|　　<a href="javascript:if(confirm('https://www.8868.cn/announcement/detail-1927.html  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.8868.cn/announcement/detail-1927.html'" tppabs="https://www.8868.cn/announcement/detail-1927.html">常见问题</a>　　|　　<a href="javascript:if(confirm('https://www.8868.cn/announcement/detail-1927.html  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.8868.cn/announcement/detail-1927.html'" tppabs="https://www.8868.cn/announcement/detail-1927.html">新手帮助</a>　　|　　<a href="javascript:if(confirm('https://www.8868.cn/user/userfeedback.html  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.8868.cn/user/userfeedback.html'" tppabs="https://www.8868.cn/user/userfeedback.html">反馈及投诉</a>
+      </div>
+      <div>
+        坤坤团队信息科技有限公司版权所有　　　粤ICP备********号　　　粤网文[2019]****-***号
+      </div>
+    </div>
+    <div class="qr_code vertical">
+      <div>
+        <img src="../pcassets/images/_footer/app_qrcode-15fb907783.png" alt="扫我下载移动端">
+        扫我下载移动端
+      </div>
+      <div>
+        <img src="../pcassets/images/_footer/public-1e42242064.jpg" alt="关注公众号">
+        关注公众号
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="../pcassets/js/_common/js/vue-f801a16d2c.js"></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded',function () {
+    //body内点击关闭弹窗
+    var game_selector = $('.game_selector');
+    $('body').on('click', function () {
+      game_selector.hide();
+    }).on('click','.input_trigger',function (e) {
+      e.stopPropagation();
+      game_selector.hide();
+      $(this).find('.game_selector').show();
+    });
+    game_selector.on('click',function (e) {
+      e.stopPropagation()
+    }).on('click','.option_link',function () {
+      game_selector.hide()
+    });
+  });
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4144d60a0a98732e2e8ed5d9ac322bfc";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

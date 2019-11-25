@@ -1,0 +1,538 @@
+<!DOCTYPE html><html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="wap-font-scale" content="no">
+  <meta name="keywords" content="租号,游戏租号,VIP会员出租,GameLife租号平台">
+  <meta name="description" content="GameLife租号平台是大家首选的租号平台，提供手游账号出租、VIP会出租等服务，安全可靠，便宜到家。">
+  <title>确认订单</title>
+  <link rel="stylesheet" href="../pcassets/css/style-bdd73ed244.css">
+    <script src="../pcassets/js/_common/jquery-22d54e62e6.js"></script>
+    <script src="../pcassets/js/_common/base-4bd599917e.js"></script>
+</head>
+<body  class="prepare" id="body">
+
+ <div class="common_header">
+  <header class="hd-box hover_txt">
+    <div class="main vertical">
+      <div>
+        <a href="index.html">hi，欢迎来到GameLife租号平台</a>
+          <span class="not_login">|</span>
+          <a href="pc/user/login.htm" class="not_login">安全登录</a>
+          <a href="pc/user/register.htm" class="not_login">免费注册</a>
+      </div>
+      <div class="vertical">
+
+        <a href="index.html" class="head_link">首页</a>
+        <div class="head_link buyer_link">
+          <a href="pc/user/login-currentUrl">玩家中心</a>
+          <div class="sub_link"><a href="">我的租号订单</a></div>
+        </div>
+        <div class="head_link host_link">
+          <a href="#">号主中心</a>
+          <div class="sub_link">
+            <a href="#">我要出租</a>
+            <a href="#">我出租的商品</a>
+            <a href="#">我出租的订单</a>
+          </div>
+        </div>
+        <div class="head_link">
+            <a href="index.html">商户助手</a>
+        </div>
+        <a href="index.html" class="head_link">帮助中心</a>
+      </div>
+    </div>
+  </header>
+  <div class="nav_box">
+    <div class="main">
+      <div class="top vertical">
+        <div class="vertical">
+          <a href="../index.html" >
+            <img src="../pcassets/images/index/logo-dc85e6e113.png" alt="租号logo" width="252" height="84">
+          </a>
+          <h1 class="logo_name">更懂你的安全租号平台</h1>
+        </div>
+        <div class="search_box vertical" id="search_game">
+          <form action="http://z.8868.cn/product/list" @submit="on_submit" class="search_form">
+            <input type="search" class="search" name="keyword" value="" placeholder="请输入关键词为您搜索">
+            <button class="go_search btn">搜索</button>
+            <input type="hidden" name="game_id" value="4468">
+            <input type="hidden" name="channel_id" value="">
+            <input type="hidden" name="game_partition_id" value="">
+          </form>
+        </div>
+      </div>
+      <nav class="nav_bar vertical">
+
+        <a href="/" class="nav_link on">首页</a>
+        <a href="/pc/zsyh" class="nav_link">租送优惠</a>
+        <a href="/pc/yzzh" class="nav_link">优质账号</a>
+        <a href="/pc/sjrz" class="nav_link">商家入驻</a>
+        <a href="/pc/order/loginkit" class="nav_link hot">下载租号上号器</a>
+        <a href="https://www.8868.cn/announcement/detail-1927.html" target="_blank" class="nav_link">帮助中心</a>
+        <!--<a href="/pc/zhapp" class="nav_link">下载APP</a>-->
+      </nav>
+    </div>
+    <hr class="yellow">
+  </div>
+</div>
+   <ul class="bread_nav vertical hover_txt">
+    <li><a href="/">租号首页</a></li>
+      <li><a href="/product/list?game_id=4468">穿越火线</a></li>
+      <li><a href="/product/detail?product_id=RENT-PRO-190703-232400699-1BB14F">商品详情</a></li>
+      <li><a>订单确认</a></li>
+  </ul>
+
+<div class="main">
+  <form class="order-prepare" id="form-order" action="add" method="post">
+    <input id="product_id" type="hidden" name="product_id" value="RENT-PRO-190703-232400699-1BB14F">
+    <input type="hidden" name="guarantee_deposit_type" value="1">
+    <input type="hidden" name="is_recommend" value="0">
+    <input id="buy_input" type="hidden" name="rent_type" value="">
+    <input id="_conpons" type="hidden" name="use_id" value="">
+    <input id="t_uid" type="hidden" name="t_uid" value="">
+    <input id="order_id" type="hidden" name="order_id" value="">
+    <div class="order-product vertical">
+      <div class="vertical">
+        <img src="https://zeus.8868.cn/base_game_product_web/1531813328755.jpg?x-oss-process=style/origin" alt="商品图片">
+        <div class="goods-txt">
+          <div classinfo="name" class="line2">【穿越火线-租号】外加炫金黑龙  500天烟雾头</div>
+          <div class="gray line1">端游客户端/江西一区</div>
+        </div>
+      </div>
+      <div class="red"><strong>3.0</strong>/小时</div>
+    </div>
+
+    <div class="form-group">
+      <!-- 游戏账号+会员VIP -->
+      <div class="content-wrap">
+        <!-- 时租价 -->
+       		 <div class="content-inner active" data-value="1">
+         		 <div><span class="left">时租</span><span class="right-part"> <span
+                  id="price-hour">3.0</span>元/小时<span class="content-label"><img
+                  src=".../pcassets/images/order/cheak-bee81b761d.png" alt="8868"/></span></span></div>
+       		 </div>
+        <div class="content-inner" data-value="2">
+          <div><span class="left">日租</span><span class="right-part"><span
+                  id="price-day">40.0</span>元/天<span class="content-label"><img
+                  src="../pcassets/images/order/cheak-bee81b761d.png" alt="8868"/></span></span></div>
+        </div>
+      </div>
+          <div class="product-discounts">
+            <span class="hour-discont discounts-des" hidden>
+              <span class="promote_tag">时租满送</span>
+              <span class="discont-msg-h"></span>
+            </span>
+
+            <span class="day-discont discounts-des" hidden>
+              <span class="promote_tag">日租立减</span>
+              <span class="discont-msg-d"></span>
+            </span>
+          </div>
+          <script>
+            $(function () {
+              var json_data = {"promotion_day_title":["租3天减15元"],"promotion_hour_title":["租6送1"]};
+              if(json_data.promtion_hour_title){
+                $('.hour-discont').show();
+                $('.discont-msg-h').text(json_data.promtion_hour_title.join('，'));
+              }
+              if(json_data.promtion_day_title){
+                $('.day-discont').show();
+                $('.discont-msg-d').text(json_data.promtion_day_title.join('，'))
+              }
+            })
+          </script>
+      <!-- 游戏账号+会员VIP -->
+      <div class="rent-count">
+        <div class="z-time">租赁时长：</div>
+        <div class="input-wrap">
+          <input readonly="readonly"
+                 type="text"
+                 id="buy_count"
+                 name="buy_count"
+                 data-min="2"
+                 min="2"
+                 max="100"
+                 value="2"/>
+          <div>
+            <button class="add" type="button"></button>
+            <button class="min" type="button"></button>
+          </div>
+        </div>
+        <span id="rent-unit">小时</span>
+
+        <div class="tost-msg"></div>
+      </div>
+    </div>
+      <ul class="order-couponList">
+
+        <label><input type="checkbox" id="more_coupon" hidden><i></i></label>
+      </ul>
+      <div class="form-text">
+        <div class="form-textInfo"><span class="label">优惠券：</span></div>
+        <div>
+          <span class="price">
+            <span id="coupon-amount">0</span>元
+          </span>
+        </div>
+      </div>
+
+
+    <div class="form-text">
+      <div class="form-textInfo"><span class="label">押金：</span>
+        <!--<span class="remind">（订单完成24小时后将退还您的账户）</span>--></div>
+      <div><span class="price"><span id="guarantee-amount">10.0</span>元</span>
+      </div>
+    </div>
+
+
+    <div class="form-text">
+      <div class="form-textInfo"><span class="label">租金：</span></div>
+      <div><span class="price"><span id="rent-amount">0</span>元</span>
+      </div>
+    </div>
+
+
+
+    <div class="form-checkbox vertical">
+      <div class="form-text" id="reality">
+        <div class="form-textInfo"><span class="label">实际支付</span></div>
+        <div><span class="price"><span
+                id="rent-total">16.0</span><span>元</span></span>
+        </div>
+      </div>
+      <div class="vertical">
+  <label class="checkbox">
+    <input type="checkbox" value="1"  checked id="check_rules">
+    <i class="check_icon"></i>
+    <span class="check_txt">我已看过并同意</span>
+  </label>
+       <a href="/user/agreement" class="yellow">《租号服务协议》</a>
+        <button class="btn" id="submit-btn">去付款</button>
+      </div>
+    </div>
+  </form>
+
+  <div id="order_confirm-simple-dialog" class="dialog-mask">
+    <div class="dialog">
+      
+      <div class="title">订单确认</div>
+      <div class="content">
+<style>
+  #order_confirm-simple-dialog li{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    color: #666;
+  }
+  #order_confirm-simple-dialog li+li{
+    margin-top: 10px;
+  }
+  #order_confirm-simple-dialog span:not(.red){
+    color: #333;
+  }
+  #order_confirm-simple-dialog span[class$="-confirm"]:before{
+    content: "￥";
+  }
+  #order_confirm-simple-dialog .rent_type:after{
+    content: "：";
+  }
+</style>
+<ul class="confirm_list" style="margin: 0;padding: 0;list-style: none">
+  <li>渠道区服：<span>端游客户端/江西一区</span></li>
+  <li>上号方式：<span>pc上号器</span></li>
+  <li><em class="rent_type"></em><span class="rent_type_value"></span></li>
+  <li>租金：<span class="rent-amount-confirm"></span></li>
+  <li>押金：<span>-<span class="guarantee-amount-confirm">10.0</span></span></li>
+  <li>优惠券：<span>-<span class="coupon-amount-confirm"></span></span></li>
+  <li class="host_discount">号主优惠：<span>-<span class="host_discount-confirm"></span></span></li>
+  <li>实际支付：<span class="red rent-total-confirm"></span></li>
+</ul>
+</div>
+      <div class="btns">
+        <button id="order_confirm-simple-dialog-close" type="button">取消</button>
+        <button id="order_confirm-simple-dialog-submit" type="button">去付款</button>
+      </div>
+    </div>
+  </div>
+    <script>
+      base.simpleForm('order_confirm','',null,null,function(){window.has_confirmed = true;$("#form-order").submit()})
+    </script>
+
+
+
+<script>
+  $(function () {
+      window.has_confirmed = false;
+
+      function show_realname_auth_window(e, callback){
+          if(window.has_confirmed)
+              return
+
+          $("#realname_auth-simple-dialog").show();
+          $('#realname_auth-simple-dialog-close').on("click", function () {
+              $("#realname_auth-simple-dialog").hide();
+              if(callback)
+                  callback(false)
+          })
+          $('#realname_auth-simple-dialog-submit').on('click', function () {
+              $("#realname_auth-simple-dialog").hide();
+              if(callback)
+                  callback(true)
+          });
+          e.preventDefault();
+      }
+
+      function on_form_order_submit(e){
+          //计算确认订单
+          var checked_rent_type = $('.content-inner.active');
+          var checked_rent_val = +checked_rent_type.attr('data-value');
+          $('.rent_type').text(checked_rent_type.find('.left').text());
+
+          var give_discount = $('#give');
+          var buy_count = (checked_rent_val === 1 && give_discount.is(':visible')) ? ($('#buy_count').val()+'+'+give_discount.text()) : $('#buy_count').val();
+          if(checked_rent_val === 4){
+              var begin = +checked_rent_type.attr('data-begin');
+              var end = +checked_rent_type.attr('data-end');
+              $('.rent_type_value').text((end-begin+1)+'小时（'+begin+'点-'+end+'点）');
+          }else{
+              $('.rent_type_value').text(buy_count+checked_rent_type.find('.right-part').text().replace(/^[\s\S]*\//,'')+(checked_rent_val === 1 && give_discount.is(':visible') ? ('（满送'+give_discount.text()+'小时）') : ''));
+          }
+          $('.rent-amount-confirm').text($('#rent-amount').text());
+          $('.coupon-amount-confirm').text($('#coupon-amount').length ? (-$('#coupon-amount').text()) : 0);
+          $('.rent-total-confirm').text($('#rent-total').text());
+          if(checked_rent_val === 2 && give_discount.is(':visible')){
+              $('.host_discount').show().find('.host_discount-confirm').text(give_discount.text())
+          }else{
+              $('.host_discount').hide()
+          }
+          $('#order_confirm-simple-dialog').show();
+          if(!window.has_confirmed){
+              e.preventDefault();
+          }
+      }
+
+    $("#form-order").on('submit',function (e) {
+        show_realname_auth_window(e, function(succ) {
+            if (succ){
+                location.href = "/user/realnameAuth?redirect=" + encodeURIComponent(location.href);
+            }else{
+                on_form_order_submit(e)
+            }
+        })
+
+
+    })
+  })
+</script></div>
+
+ <footer class="ft">
+  <div class="main vertical">
+    <div class="left hover_txt">
+      <!--<div class="friend_link">
+        友情链接：<a href="http://z.8868.cn" target="_blank">租号平台</a><a href="http://www.100bt.com/"
+                                                                   target="_blank">百田网</a><a
+              href="http://www.18touch.com/" target="_blank">超好玩</a><a href="http://www.jokeji.cn/"
+                                                                       target="_blank">笑话集</a><a
+              href="http://www.gamedog.cn" target="_blank">游戏狗</a><a href="http://www.8868.cn/ios_charge/"
+                                                                     target="_blank">苹果代充</a><a
+              href="http://www.gk99.com/" target="_blank">游戏港口</a><a href="http://www.douxie.com/" target="_blank">单机游戏大全</a><a
+              href="http://www.3gmfw.cn/ " target="_blank">游戏攻略</a>
+      </div>
+      <div>
+        客服热线：0757-63523999
+      </div>-->
+      <div>
+        <a href="https://www.8868.cn/announcement/detail-1927.html" target="_blank">帮助中心&nbsp;</a>　|　　<a href="https://www.8868.cn/announcement/detail-1927.html">常见问题</a>　　|　　<a href="https://www.8868.cn/announcement/detail-1927.html">新手帮助</a>　　|　　<a href="https://www.8868.cn/user/userfeedback.html">反馈及投诉</a>
+      </div>
+      <div>
+        坤坤团队信息科技有限公司版权所有　　　粤ICP备********号　　　粤网文[2019]****-***号
+      </div>
+    </div>
+    <div class="qr_code vertical">
+      <div>
+        <img src="../pcassets/images/_footer/app_qrcode-15fb907783.png" alt="扫我下载移动端">
+        扫我下载移动端
+      </div>
+      <div>
+        <img src="../pcassets/images/_footer/public-1e42242064.jpg" alt="关注公众号">
+        关注公众号
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="../pcassets/js/_common/vue-f801a16d2c.js"></script>
+
+<script src="../pcassets/js/_common/validator-07367d91e3.js"></script>
+<script src="../pcassets/js/order/prepare-ad0b576c07.js"></script>
+
+<script>
+  (function () {
+    var search_game = new Vue({
+      el: '#search_game',
+      data: {
+        game_name: "全部游戏",
+        channel_name: "全部渠道",
+        partition_name: "全部区服",
+        m_games: [],
+        pc_games: [],
+        v_games: [],
+        channels: [],
+        categories: [],
+        partitions: [],
+        game_type: 1,
+        game_letters: base.letters(),
+        game_keyword: '',
+        game_id: '',
+        channel_id: ' ',
+        category_id: '',
+        partition_id: ''
+      },
+      methods:{
+        get_game: function(type,data_name,letter,keywords){
+          var data_name = arguments[1];
+          if(keywords){
+            if(this.game_type === 1){
+              data_name = 'm'
+            }else if(this.game_type === 2){
+              data_name = 'v'
+            }else if(this.game_type === 5){
+              data_name = 'pc'
+            }
+          }
+
+          base.get_game({
+            letter: letter,
+            type: type || this.game_type,
+            keywords: keywords,
+            done: function (data) {
+              this[data_name+'_games'] = data.games;
+            }.bind(this)
+          })
+        },
+        close_box: function(attr){
+          var keys = Object.keys(attr);
+          var attr_name = keys[0].substring(0,keys[0].indexOf('_'));
+          this[attr_name+'_id']=attr[attr_name+'_id'];
+          this[attr_name+'_name']=attr[attr_name+'_name'];
+        },
+        on_submit: function (e) {
+          if(this.game_id){
+            var $this = e.target;
+            $this.game_id.value = this.game_id;
+            $this.channel_id.value = this.channel_id.trim();
+            $this.game_partition_id.value = this.partition_id;
+          }else{
+            e.preventDefault();
+            base.toast('请先选择游戏');
+            $('.input_trigger:eq(0)').click();
+          }
+        }
+      },
+      watch:{
+        game_id: function (val) {
+          base.get_channel({
+            game_id: val,
+            done: function (data) {
+              this.channels = [{channel_name:'全部渠道',channel_id:''}].concat(data.channels);
+              var has_page_channel_id;
+              if(!has_page_channel_id){
+                this.channel_name = this.channels[0].channel_name;
+                this.channel_id = this.channels[0].channel_id;
+              }else{
+                this.channel_name = '';
+                this.channel_id = '';
+                has_page_channel_id = false;
+              }
+            }.bind(this),
+            fail: function(data){
+              this.channels = [{channel_name:'全部渠道',channel_id:''}]
+              this.channel_name = this.channels[0].channel_name;
+              this.channel_id = this.channels[0].channel_id;
+
+              this.categories = [{category_name:'全部区服组',category_id:''}];
+              this.category_id = this.categories[0].category_id;
+
+              this.partitions = [{partition_name:'全部区服',partition_id:''}]
+              this.partition_id = this.partitions[0].partition_id;
+              this.partition_name = this.partitions[0].partition_name;
+            }.bind(this)
+          })
+        },
+        channel_id: function (val) {
+          base.get_partition_categories({
+            game_id: this.game_id,
+            channel_id: val,
+            done: function (data) {
+              this.categories = data.categories;
+              this.category_id = this.categories[0].category_id;
+            }.bind(this),
+            fail: function (data) {
+              this.categories = [];
+              this.category_id = '';
+            }.bind(this)
+          })
+        },
+        category_id: function (val) {
+          base.get_partition({
+            game_id: this.game_id,
+            category_id: val,
+            done: function (data) {
+              this.partitions = [{partition_name:'全部区服',partition_id:''}].concat(data.partitions);
+              var has_page_partition_id;
+              if(!has_page_partition_id){
+                this.partition_id = this.partitions[0].partition_id;
+                this.partition_name = this.partitions[0].partition_name;
+              }else{
+                this.partition_name = '';
+                this.partition_id = '';
+                has_page_partition_id = false;
+              }
+            }.bind(this),
+            fail: function (data) {
+              this.partitions = [{partition_name:'全部区服',partition_id:''}]
+              this.partition_id = this.partitions[0].partition_id;
+              this.partition_name = this.partitions[0].partition_name;
+            }.bind(this)
+          })
+        }
+      }
+    });
+    search_game.game_id = '';
+  }());
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded',function () {
+    //body内点击关闭弹窗
+    var game_selector = $('.game_selector');
+    $('body').on('click', function () {
+      game_selector.hide();
+    }).on('click','.input_trigger',function (e) {
+      e.stopPropagation();
+      game_selector.hide();
+      $(this).find('.game_selector').show();
+    });
+    game_selector.on('click',function (e) {
+      e.stopPropagation()
+    }).on('click','.option_link',function () {
+      game_selector.hide()
+    });
+  });
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4144d60a0a98732e2e8ed5d9ac322bfc";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

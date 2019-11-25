@@ -1,0 +1,273 @@
+body, ul, ol, dl, dd, p {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #666666; }
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto; }
+  .container:before {
+    content: '';
+    display: block;
+    clear: both; }
+  .container:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.main {
+  background: #fff;
+  padding-bottom: 15px; }
+  .main .container {
+    font-size: 14px; }
+    .main .container .user-head {
+      padding: 15px 20px;
+      margin: 10px 0 20px;
+      border: 1px solid #ddd;
+      overflow: hidden; }
+      .main .container .user-head ul {
+        float: left;
+        padding: 0 5px;
+        width: 175px;
+        height: 90px;
+        border-left: 1px solid #ddd; }
+        .main .container .user-head ul:first-child {
+          border: 0;
+          width: 218px; }
+        .main .container .user-head ul li {
+          text-align: center;
+          line-height: 30px;
+          color: #333; }
+          .main .container .user-head ul li b {
+            font-size: 18px; }
+          .main .container .user-head ul li .pwd-color {
+            color: #c51e16; }
+            .main .container .user-head ul li .pwd-color:hover {
+              color: #971711; }
+          .main .container .user-head ul li.btn-line a {
+            padding: 5px 20px;
+            color: #fff;
+            border-radius: 3px; }
+            .main .container .user-head ul li.btn-line a.btn-ch {
+              background: #c51e16; }
+              .main .container .user-head ul li.btn-line a.btn-ch:hover {
+                background: #ae1b13; }
+            .main .container .user-head ul li.btn-line a.btn-ti {
+              background: #ff8c3d; }
+              .main .container .user-head ul li.btn-line a.btn-ti:hover {
+                background: #ff7d23; }
+          .main .container .user-head ul li.color1 {
+            color: #e3515a; }
+          .main .container .user-head ul li.color2 {
+            color: #7fbc00; }
+          .main .container .user-head ul li.color3 {
+            color: #12b7f6; }
+          .main .container .user-head ul li.color4 {
+            color: #ff8c3d; }
+          .main .container .user-head ul li .see-detail {
+            padding: 3px 10px;
+            border-radius: 3px;
+            background: #f2f2f2;
+            color: #666; }
+            .main .container .user-head ul li .see-detail:hover {
+              background: #ddd; }
+    .main .container .p-title {
+      line-height: 36px; }
+    .main .container .center-left {
+      float: left;
+      width: 248px;
+      height: 814px;
+      border: 1px solid #E8E8E8;
+      background: #FBFBFB; }
+      .main .container .center-left .lf-logo {
+        padding: 20px 0;
+        font-size: 24px;
+        text-align: center;
+        color: #c51e16; }
+        .main .container .center-left .lf-logo i {
+          display: inline-block;
+          background: url("../../themeRed/img/u-center-left01.png") no-repeat 4px 5px;
+          width: 32px;
+          height: 32px;
+          position: relative;
+          top: 6px;
+          right: 3px; }
+      .main .container .center-left ul {
+        padding: 10px 0;
+        border-top: 1px solid #e8e8e8; }
+        .main .container .center-left ul li {
+          text-align: center;
+          line-height: 32px; }
+          .main .container .center-left ul li.active a {
+            color: #c51e16; }
+          .main .container .center-left ul li a {
+            color: #888; }
+            .main .container .center-left ul li a:hover {
+              color: #c51e16; }
+          .main .container .center-left ul li:first-child {
+            line-height: 40px;
+            font-weight: bold;
+            color: #666; }
+            .main .container .center-left ul li:first-child i {
+              position: relative;
+              display: inline-block;
+              width: 26px;
+              height: 23px;
+              background: url("../../themeRed/img/icons.png") no-repeat 0 -225px;
+              top: 6px;
+              right: 6px; }
+              .main .container .center-left ul li:first-child i.buy {
+                background-position: 0 -245px; }
+              .main .container .center-left ul li:first-child i.money {
+                background-position: -25px -225px; }
+    .main .container .center-right {
+      padding: 10px 20px 40px 270px;
+      border: 1px solid #E8E8E8;
+      height: 500px; }
+     .main .container .center-right .user-head-img {
+        padding: 20px 0 30px 120px;
+        height: 50px;
+        margin-top: 20px;
+        position:relative; }
+          .user-head-img img{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100px;
+      height:100px;
+      border-radius:50%;
+}
+        .main .container .center-right .logo > h3 {
+          line-height: 36px;
+          font-size: 18px;
+          margin: 0; }
+        .main .container .center-right .logo .money {
+          line-height: 30px; }
+          .main .container .center-right .logo .money span {
+            margin-right: 30px;
+            font-size: 13px; }
+            .main .container .center-right .logo .money span b {
+              font-size: 15px; }
+          .main .container .center-right .logo .money .cur b {
+            color: #c51e16; }
+          .main .container .center-right .logo .money .fre b {
+            color: #019934; }
+          .main .container .center-right .logo .money a {
+            padding: 6px 24px; }
+            .main .container .center-right .logo .money a.chong {
+              background: orange;
+              color: #fff;
+              border-radius: 3px;
+              border: 1px solid orange;
+              margin: 0 10px 0 50px; }
+              .main .container .center-right .logo .money a.chong:hover {
+                background: #971711; }
+            .main .container .center-right .logo .money a.tixian {
+              color: #019934;
+              border: 1px solid #019934;
+              border-radius: 3px; }
+              .main .container .center-right .logo .money a.tixian:hover {
+                background: #019934;
+                color: #fff; }
+      .main .container .center-right .statis {
+        overflow: hidden;
+        background: #F8F8F8;
+        margin-top: 20px; }
+        .main .container .center-right .statis li {
+          float: left;
+          text-align: center;
+          padding: 15px 0;
+          width: 227px;
+          line-height: 30px;
+          position: relative; }
+          .main .container .center-right .statis li i {
+            position: absolute;
+            bottom: -1px;
+            right: 30px;
+            width: 166px;
+            height: 1px;
+            border-bottom: 1px dashed #ddd; }
+          .main .container .center-right .statis li > div {
+            border-right: 1px dashed #ddd;
+            margin-right: -1px; }
+            .main .container .center-right .statis li > div a {
+              text-decoration: underline;
+              margin: 0 4px;
+              font-weight: bold;
+              color: #c51e16; }
+            .main .container .center-right .statis li > div.no-bd {
+              border: 0; }
+          .main .container .center-right .statis li:hover {
+            background: #ae1b13;
+            color: #fff; }
+            .main .container .center-right .statis li:hover .u-msg {
+              color: #fff; }
+      .main .container .center-right .safe > h3 {
+        border-bottom: 1px solid #ddd;
+        line-height: 30px; }
+        .main .container .center-right .safe > h3 a {
+          padding: 5px 10px;
+          color: orange;
+          border-bottom: 2px solid orange; }
+      .main .container .center-right .safe .safe-item li {
+        line-height: 60px;
+        padding: 15px 15px;
+        position: relative;
+        border-bottom: 1px dashed #ddd; }
+        .main .container .center-right .safe .safe-item li i {
+          margin: 0 10px 0 0;
+          float: left;
+          width: 47px;
+          height: 46px; }
+          .main .container .center-right .safe .safe-item li i.icon-1 {
+            background: url("../../themeRed/img/u-center5.png") no-repeat; }
+          .main .container .center-right .safe .safe-item li i.icon-2 {
+            background: url("../../themeRed/img/u-center4.png") no-repeat; }
+          .main .container .center-right .safe .safe-item li i.icon-3 {
+            background: url("../../themeRed/img/u-center3.png") no-repeat; }
+          .main .container .center-right .safe .safe-item li i.icon-4 {
+            background: url("../../themeRed/img/u-center2.png") no-repeat; }
+          .main .container .center-right .safe .safe-item li i.icon-5 {
+            background: url("../../themeRed/img/u-center1.png") no-repeat; }
+          .main .container .center-right .safe .safe-item li i.icon-6 {
+            background: url("../../themeOrange/img/u-center6.png") no-repeat; }
+        .main .container .center-right .safe .safe-item li h5 {
+          line-height: 24px;
+          padding-left: 50px;
+          margin: 0;
+          font-size: 14px; }
+        .main .container .center-right .safe .safe-item li p {
+          line-height: 20px;
+          padding-left: 50px;
+          color: #999; }
+          .main .container .center-right .safe .safe-item li p a {
+            color: #c51e16; }
+            .main .container .center-right .safe .safe-item li p a:hover {
+              color: #971711; }
+        .main .container .center-right .safe .safe-item li > a {
+          position: absolute;
+          top: 18px;
+          right: 20px;
+          width: 120px;
+          line-height: 36px;
+          height: 36px;
+          text-align: center;
+          border-radius: 3px; }
+          .main .container .center-right .safe .safe-item li > a.line-1 {
+            color: orange;
+            border: 1px solid orange; }
+            .main .container .center-right .safe .safe-item li > a.line-1:hover {
+              color: #69100c;
+              border-color: #69100c; }
+          .main .container .center-right .safe .safe-item li > a.line-2 {
+            color: #fff;
+            background: #c51e16;
+            border: 1px solid #c51e16; }
+            .main .container .center-right .safe .safe-item li > a.line-2:hover {
+              background: #971711;
+              border-color: #971711; }

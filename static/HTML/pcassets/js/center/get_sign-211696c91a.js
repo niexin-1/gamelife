@@ -1,0 +1,1 @@
+function getSign(s){$(s).on("click",function(){var s=$(this);s.attr("disabled",!0),$.ajax({url:"/user/sellerSign",dataType:"json",success:function(a){200===a.code&&$("[data-sign]").addClass("sign-success").off("click"),s.attr("disabled",!1),base.toast(a.msg)}})})}
